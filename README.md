@@ -13,7 +13,7 @@ We'll use this section to provide a brief overview of the contents of the reposi
 
 ## Code of Conduct
 
-All conversations and interactions in this repository are governed by the [SciPy India Code of Conduct](https://scipy-india.github.io/coc.html). Please read and adhere to the code of conduct to ensure a positive and inclusive environment for all community members.
+All conversations and interactions in this repository are governed by the [SciPy India Code of Conduct](https://scipy.in/coc). Please read and adhere to the code of conduct to ensure a positive and inclusive environment for all community members.
 
 ## License
 
