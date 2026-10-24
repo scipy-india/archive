@@ -1,0 +1,36 @@
+<!-- @dsCard group="Countdown" height=312 subtitle="Days and closing time" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FlipClock preview</title>
+<style>
+  body { margin: 0; background: var(--background); font-family: var(--font-sans); color: var(--on-surface); }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-6) var(--space-7); padding: var(--space-5); }
+  .clock { display: flex; align-items: center; gap: var(--space-3); }
+  .tiles { display: flex; gap: 8px; }
+  .tile { position: relative; width: 84px; height: 116px; border-radius: 8px; background: var(--primary); overflow: hidden; display: flex; align-items: center; justify-content: center; }
+  .tile::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 50%; background: var(--tile-shade); }
+  .tile::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 2px; margin-top: -1px; background: var(--tile-fold); }
+  .tile span { position: relative; font-size: 104px; font-weight: 700; line-height: 1; color: var(--on-background); }
+  .colon { display: flex; flex-direction: column; gap: 22px; }
+  .colon i { width: 9px; height: 9px; border-radius: 50%; background: var(--primary); }
+  .label { font-size: 40px; font-weight: 700; line-height: 0.95; }
+  .ist { font-size: 28px; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="clock">
+    <div class="tiles"><div class="tile"><span>0</span></div><div class="tile"><span>7</span></div></div>
+    <div class="label">Days<br>left</div>
+  </div>
+  <div class="clock" aria-label="Closes at 23:59 IST">
+    <div class="tiles"><div class="tile"><span>2</span></div><div class="tile"><span>3</span></div></div>
+    <div class="colon"><i></i><i></i></div>
+    <div class="tiles"><div class="tile"><span>5</span></div><div class="tile"><span>9</span></div></div>
+    <div class="ist">IST</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!-- @dsCard height=320 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SciPy India</title>
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--background); color: var(--on-surface); font-family: var(--font-sans); overflow: hidden; }
+  .cover { position: relative; height: 320px; overflow: hidden; }
+  .art { position: absolute; top: 0; left: 480px; width: 480px; height: 320px; overflow: hidden; }
+  .art svg { display: block; width: 480px; height: 320px; }
+  .teal { fill: var(--primary); }
+  .teal-low { fill: var(--tile-low); }
+  .fold { fill: var(--background); }
+  .pink { fill: var(--accent); }
+  .purple { fill: var(--secondary); }
+  .blue { fill: var(--scipy-blue); }
+  .dot { fill: var(--border); }
+  .tile { rx: var(--radius-tile); }
+  .slab { rx: var(--radius-panel); }
+  .words { position: absolute; left: var(--space-6); bottom: var(--space-6); max-width: 440px; }
+  .name { margin: 0; font-size: 112px; line-height: .95; font-weight: 700; letter-spacing: -0.02em; color: var(--on-surface); }
+  .tag { margin: var(--space-3) 0 0 4px; font-size: 14px; line-height: 20px; color: var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 320" width="480" height="320">
+<!--
+  blocks      primary flip-tile pair 2 × 104×160 (the countdown tiles, the brand's signature; lower halves tile-low, fold cut in background) · accent slab 96×176 bled off the top · secondary slab 120×184 bled off the right · scipy-blue disc r48 (the logo's disc) — about 25% of 960×320
+  arrangement tiles low-left as the figure, slabs above and right as satellites, disc between; bottoms on one line space-6 above the edge, space-4 gutters
+  pattern     dot grid, from "Graph-paper grid ... the one decorative texture": border dots at a space-6 pitch, 21 units, over the ground above the tiles
+  scales      gutters space-4 (16); pitch space-6 (32); tile corners radius-tile; slab corners radius-panel; disc half its side
+-->
+<defs>
+<clipPath id="tileA"><rect class="tile" x="24" y="128" width="104" height="160" rx="18"/></clipPath>
+<clipPath id="tileB"><rect class="tile" x="144" y="128" width="104" height="160" rx="18"/></clipPath>
+</defs>
+<circle class="dot" cx="24" cy="24" r="3"/><circle class="dot" cx="56" cy="24" r="3"/><circle class="dot" cx="88" cy="24" r="3"/><circle class="dot" cx="120" cy="24" r="3"/><circle class="dot" cx="152" cy="24" r="3"/><circle class="dot" cx="184" cy="24" r="3"/><circle class="dot" cx="216" cy="24" r="3"/>
+<circle class="dot" cx="24" cy="56" r="3"/><circle class="dot" cx="56" cy="56" r="3"/><circle class="dot" cx="88" cy="56" r="3"/><circle class="dot" cx="120" cy="56" r="3"/><circle class="dot" cx="152" cy="56" r="3"/><circle class="dot" cx="184" cy="56" r="3"/><circle class="dot" cx="216" cy="56" r="3"/>
+<circle class="dot" cx="24" cy="88" r="3"/><circle class="dot" cx="56" cy="88" r="3"/><circle class="dot" cx="88" cy="88" r="3"/><circle class="dot" cx="120" cy="88" r="3"/><circle class="dot" cx="152" cy="88" r="3"/><circle class="dot" cx="184" cy="88" r="3"/><circle class="dot" cx="216" cy="88" r="3"/>
+<rect class="pink slab" x="264" y="-24" width="96" height="176" rx="12"/>
+<rect class="purple slab" x="376" y="40" width="120" height="184" rx="12"/>
+<circle class="blue" cx="312" cy="240" r="48"/>
+<g clip-path="url(#tileA)">
+<rect class="teal" x="24" y="128" width="104" height="80"/>
+<rect class="teal-low" x="24" y="208" width="104" height="80"/>
+<rect class="fold" x="24" y="206" width="104" height="4"/>
+</g>
+<g clip-path="url(#tileB)">
+<rect class="teal" x="144" y="128" width="104" height="80"/>
+<rect class="teal-low" x="144" y="208" width="104" height="80"/>
+<rect class="fold" x="144" y="206" width="104" height="4"/>
+</g>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">SciPy<br>India</h1>
+<p class="tag">Scientific computing and open source software, since 2009.</p>
+</div>
+</div>
+</body>
+</html>

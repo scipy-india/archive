@@ -1,0 +1,31 @@
+<!-- @dsCard group="Countdown" height=96 subtitle="Nine-day campaign, today 26 Oct" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ProgressStrip preview</title>
+<style>
+  body { margin: 0; background: var(--background); font-family: var(--font-sans); }
+  .strip { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 8px; padding: var(--space-5); max-width: 640px; }
+  .day { display: flex; flex-direction: column; gap: 8px; }
+  .bar { height: 10px; border-radius: var(--radius-pill); background: var(--primary); }
+  .gone .bar { background: var(--post-rule); }
+  .ahead .bar { opacity: 0.35; }
+  .date { font-size: 13px; line-height: 1.2; white-space: nowrap; color: var(--post-muted); }
+  .today .date { color: var(--primary); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="strip">
+  <div class="day gone"><div class="bar"></div><span class="date">24 Oct</span></div>
+  <div class="day gone"><div class="bar"></div><span class="date">25 Oct</span></div>
+  <div class="day today"><div class="bar"></div><span class="date">26 Oct</span></div>
+  <div class="day ahead"><div class="bar"></div><span class="date">27 Oct</span></div>
+  <div class="day ahead"><div class="bar"></div><span class="date">28 Oct</span></div>
+  <div class="day ahead"><div class="bar"></div><span class="date">29 Oct</span></div>
+  <div class="day ahead"><div class="bar"></div><span class="date">30 Oct</span></div>
+  <div class="day ahead"><div class="bar"></div><span class="date">31 Oct</span></div>
+  <div class="day ahead"><div class="bar"></div><span class="date">1 Nov</span></div>
+</div>
+</body>
+</html>

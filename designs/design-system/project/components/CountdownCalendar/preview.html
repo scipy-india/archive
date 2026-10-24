@@ -1,0 +1,53 @@
+<!-- @dsCard group="Countdown" height=300 subtitle="Two weeks to the deadline" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CountdownCalendar preview</title>
+<style>
+  body { margin: 0; background: var(--background); font-family: var(--font-sans); }
+  .wrap { padding: var(--space-5); }
+  .panel { max-width: 560px; background: var(--post-panel); border: 2px solid var(--border); border-radius: var(--radius-panel); padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .title { font-size: 16px; font-weight: 600; color: var(--on-surface); }
+  .note { font-size: 13px; color: var(--post-muted); }
+  .grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+  .wd { text-align: center; font-size: 12px; font-weight: 600; color: var(--post-muted); }
+  .cell { position: relative; height: 58px; border: 2px solid var(--post-outline); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; }
+  .num { position: relative; font-size: 22px; font-weight: 700; line-height: 1; color: var(--on-surface); }
+  .lbl { position: relative; height: 12px; font-size: 10px; font-weight: 700; line-height: 12px; }
+  .past { border-color: var(--post-rule); }
+  .past .num { color: var(--post-past); }
+  .past::before { content: ""; position: absolute; left: 50%; top: 50%; width: 120%; height: 2px; background: var(--post-outline); transform: translate(-50%, -50%) rotate(-40deg); }
+  .today { background: var(--primary); border-color: var(--primary); }
+  .today .num, .today .lbl { color: var(--on-background); }
+  .deadline { border: 3px solid var(--primary); }
+  .deadline .num { color: var(--primary); }
+  .deadline .lbl { color: var(--on-surface); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="panel">
+    <div class="head"><span class="title">October–November 2026</span><span class="note">Closes 23:59 IST, 1st November</span></div>
+    <div class="grid">
+      <div class="wd">Mon</div><div class="wd">Tue</div><div class="wd">Wed</div><div class="wd">Thu</div><div class="wd">Fri</div><div class="wd">Sat</div><div class="wd">Sun</div>
+      <div class="cell past"><span class="num">19</span><span class="lbl"></span></div>
+      <div class="cell past"><span class="num">20</span><span class="lbl"></span></div>
+      <div class="cell past"><span class="num">21</span><span class="lbl"></span></div>
+      <div class="cell past"><span class="num">22</span><span class="lbl"></span></div>
+      <div class="cell past"><span class="num">23</span><span class="lbl"></span></div>
+      <div class="cell past"><span class="num">24</span><span class="lbl"></span></div>
+      <div class="cell past"><span class="num">25</span><span class="lbl"></span></div>
+      <div class="cell today"><span class="num">26</span><span class="lbl">Today</span></div>
+      <div class="cell"><span class="num">27</span><span class="lbl"></span></div>
+      <div class="cell"><span class="num">28</span><span class="lbl"></span></div>
+      <div class="cell"><span class="num">29</span><span class="lbl"></span></div>
+      <div class="cell"><span class="num">30</span><span class="lbl"></span></div>
+      <div class="cell"><span class="num">31</span><span class="lbl"></span></div>
+      <div class="cell deadline"><span class="num">1</span><span class="lbl">Deadline</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

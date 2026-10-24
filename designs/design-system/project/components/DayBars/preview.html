@@ -1,0 +1,42 @@
+<!-- @dsCard group="Countdown" height=330 subtitle="Story timeline, today 26 Oct" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DayBars preview</title>
+<style>
+  body { margin: 0; background: var(--background); font-family: var(--font-sans); }
+  .wrap { padding: var(--space-5); }
+  .panel { max-width: 560px; box-sizing: border-box; background: var(--post-panel); border: 2px solid var(--border); border-radius: var(--radius-panel); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+  .head { display: flex; justify-content: space-between; gap: var(--space-3); font-family: var(--font-mono); font-size: 12px; line-height: 1.3; color: var(--post-muted); }
+  .bars { display: flex; align-items: flex-end; gap: 6px; }
+  .day { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+  .pill { padding: 3px 6px; border-radius: var(--radius-pill); background: var(--primary); color: var(--on-background); font-size: 10px; font-weight: 700; line-height: 1.2; }
+  .val { font-family: var(--font-mono); font-size: 12px; font-weight: 700; line-height: 1.25; color: var(--post-muted); }
+  .bar { width: 100%; box-sizing: border-box; border-radius: 4px 4px 2px 2px; border: 2px solid var(--post-bar-outline); }
+  .date { display: flex; flex-direction: column; align-items: center; padding-top: 3px; font-size: 10px; line-height: 1.25; color: var(--post-muted); white-space: nowrap; }
+  .gone .bar { background: var(--post-bar-past); border-color: var(--post-bar-past); }
+  .today .bar { background: var(--primary); border-color: var(--primary); }
+  .today .val { color: var(--primary); }
+  .today .date { color: var(--on-surface); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="panel">
+    <div class="head"><span>cfp.days_left()</span><span>24 Oct → 1 Nov</span></div>
+    <div class="bars">
+      <div class="day gone"><span class="val">8</span><div class="bar" style="height: 134px"></div><span class="date"><span>Sat</span><span>24 Oct</span></span></div>
+      <div class="day gone"><span class="val">7</span><div class="bar" style="height: 118px"></div><span class="date"><span>Sun</span><span>25 Oct</span></span></div>
+      <div class="day today"><span class="pill">Today</span><span class="val">6</span><div class="bar" style="height: 102px"></div><span class="date"><span>Mon</span><span>26 Oct</span></span></div>
+      <div class="day"><span class="val">5</span><div class="bar" style="height: 86px"></div><span class="date"><span>Tue</span><span>27 Oct</span></span></div>
+      <div class="day"><span class="val">4</span><div class="bar" style="height: 70px"></div><span class="date"><span>Wed</span><span>28 Oct</span></span></div>
+      <div class="day"><span class="val">3</span><div class="bar" style="height: 54px"></div><span class="date"><span>Thu</span><span>29 Oct</span></span></div>
+      <div class="day"><span class="val">2</span><div class="bar" style="height: 38px"></div><span class="date"><span>Fri</span><span>30 Oct</span></span></div>
+      <div class="day"><span class="val">1</span><div class="bar" style="height: 22px"></div><span class="date"><span>Sat</span><span>31 Oct</span></span></div>
+      <div class="day"><span class="val">0</span><div class="bar" style="height: 6px"></div><span class="date"><span>Sun</span><span>1 Nov</span></span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

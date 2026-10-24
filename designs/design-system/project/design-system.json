@@ -1,0 +1,43 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-24T13:22:29Z"
+  },
+  "title": "SciPy India",
+  "namespace": "SciPyIndia",
+  "libraries": [],
+  "sections": {},
+  "groups": [
+    "Logos"
+  ],
+  "assetGroups": {
+    "Logos": {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "scipy-india-logo.svg"
+      ],
+      "files": {
+        "scipy-india-logo.svg": {
+          "name": "scipy-india-logo.svg",
+          "blob": "06bd3735b716482d1f7471d8761f8a3a",
+          "size": 2848,
+          "type": "image/svg+xml"
+        }
+      }
+    }
+  },
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Claude",
+    "at": "2026-10-24T16:09:06Z",
+    "via": "Claude Code",
+    "note": "Added format recipes, standard copy lines, the icon set, grid CSS and a Footer component; tightened the calendar spec and its Deadline label contrast."
+  }
+}
